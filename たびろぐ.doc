@@ -1,2 +1,12 @@
 ①migrate前のos.pathが不明BASE_DIRしか書かれてないし、import osがないけど、最新版との違い？
 
+②そもそも静的ファイルは静的ファイル専用のサーバーを用意してそこから配信するっぽい。それはpythonanywhereでどうやって設定するんやろう？
+
+
+③ちょくちょくとSTATIC_HTMLの設定が/stati/ではなく、pythonanywhere上のファイル設定になってるけど、ここもおかしいんでしょうか。
+
+④pythonanywhere側でautoconfig使ったからか、git pullでコンフクリクトが発生するって言われるけど、前回これ無視して突破したよね。このコンフリクトが問題かも？
+
+collectstaticしたらだめでしたー
+=>os.pathをとりのぞいてみるか？
+
